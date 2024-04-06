@@ -5,17 +5,17 @@ body {
 }
 
 .main-header {
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, 0);
     padding-bottom: 10px;
 }
 
 .title {
     text-align: center;
     margin: 0;
-    font-size: 8em;
-    font-family: "Helvetica";
+    font-size: 7em;
+    font-family: "Brush Script MT";
     font-weight: normal;
-    color: white;
+    color: gold;
 }
 
 #card-container {
