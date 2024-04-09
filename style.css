@@ -13,9 +13,14 @@ body {
     background-position: 50% 65%;
 }
 
+.about-site {
+    font-size: 15px;
+    font-family: "Georgia";
+}
 .description {
     text-align: center;
     color: white;
+    font-size: medium;
 }
 
 .title {
@@ -46,7 +51,7 @@ body {
 .card-content {
     padding: 20px;
     text-align: center;
-    font-family: "Verdana";
+    font-family: "Georgia";
     color: white;
 }
 
@@ -55,17 +60,16 @@ body {
     font-size: 20px;
 }
 
+.card-content pre {
+    font-size: 17px;
+    font-family: "Georgia";
+}
+
 .card img {
     width: 50%;
     height: auto;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, .3);
-    padding: 10px;
-}
 
 button {
     text-align: center;
