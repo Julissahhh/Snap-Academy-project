@@ -57,9 +57,11 @@ function editCardContent(card, newFilmlocation) {
     card.style.display = "block";
 
     const cardHeader = card.querySelector("h2");
+    // console.log("name of location: ", newFilmlocation.name);
     cardHeader.textContent = newFilmlocation.name; //puts new name on card
 
     const cardImage = card.querySelector("img");
+    // console.log("movie pic link: ", newFilmlocation.moviepic);
     cardImage.src = newFilmlocation.moviepic; //puts new image on card
     cardImage.alt = newFilmlocation.name + " Poster"; 
 
@@ -69,7 +71,6 @@ function editCardContent(card, newFilmlocation) {
     const cardAbout = card.querySelector("p");
     cardAbout.textContent = newFilmlocation.about; //gives the unique description associated with location
     
-
     // You can use console.log to help you debug!
     // View the output by right clicking on your website,
     // select "Inspect", then click on the "Console" tab
@@ -79,3 +80,15 @@ function editCardContent(card, newFilmlocation) {
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
 
+function filterlocations() {
+    let selectedLocation = document.getElementById('filterDropdown').value;
+    let cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        if (selectedLocation === 'all' || card.classList.contains(selectedLocation)) {
+          card.style.display = 'block'; // Show the card
+        } else {
+          card.style.display = 'none'; // Hide the card
+        }
+    });
+}

@@ -16,13 +16,30 @@
         <h2 class="description"> Want to take a trip down Mia and Sebastians journey?<br>
         Here are some places they shared a moment from start of the movie to the very end  </h2>
     </header>
+    <div class = "Dropdown">
+        <select id="filterDropdown" onchange="filterlocations()">
+            <option value="all">All Locations</option>
+            <option value="location1">Smoke House Resturant</option>
+            <option value="location2">Mt Hollywood Dr</option>
+            <option value="location3">Rialto Theatre</option>
+            <option value="location4">Griffith observatory</option>
+            <option value="location5">Grand central Market</option>
+            <option value="location6">Light house Cafe</option>
+            <option value="location7">Blind donkey</option>
+        </select>
+    </div>
+    <!-- <select id="filterDropdown" onchange="filterlocations()">
+        <option value="all">All Locations</option>
+        <option value="category1">Smoke House Resturant</option>
+        <option value="category2">Mt Hollywood Dr</option>
+    </select> -->
     <div id="card-container">
         
     </div>
     <div class="card" style="display: none;">
         <div class="card-content">
-            <h2>TV Show Title</h2>
-            <img src="" alt="Image from scene">
+            <h2>Location Name</h2>
+            <img src="" alt="Image from movie">
             <pre>
                 <p id="description">
                 </p>
@@ -34,6 +51,11 @@
             </a>
         </div>
     </div>
+    <!-- <div class="footer">
+        <button id =""onclick="addCard();">
+            Show another location!
+        </button>
+    </div> -->
 </body>
 
 </html>

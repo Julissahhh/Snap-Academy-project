@@ -17,6 +17,11 @@ body {
     font-size: 15px;
     font-family: "Georgia";
 }
+
+.Dropdown {
+    position: relative;
+}
+
 .description {
     text-align: center;
     color: white;
@@ -69,6 +74,13 @@ body {
     width: 50%;
     height: auto;
 }
+
+/* .footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 10px;
+} */
 
 
 button {
