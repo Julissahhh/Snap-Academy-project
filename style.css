@@ -18,8 +18,12 @@ body {
     font-family: "Georgia";
 }
 
-.Dropdown {
-    position: relative;
+select {
+    background-color: #070730;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 10px;
 }
 
 .description {
