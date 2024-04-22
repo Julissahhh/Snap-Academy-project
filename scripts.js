@@ -117,9 +117,9 @@ function submitcomment(index){
 
     const cardComment = document.getElementById(`input-${index}`); 
     console.log(`input-${index}`);
-    console.log(cardComment.value);
+    console.log(cardComment.value); //value of what is put into the input
 
     filmlocations[index].comment.push(cardComment.value);
     const cardInput = document.getElementById(`span-${index}`);
-    cardInput.innerHTML = filmlocations[index].comment[0];
+    cardInput.innerHTML = filmlocations[index].comment[0]; // inputs card comment into the span 
 }
