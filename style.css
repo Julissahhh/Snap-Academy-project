@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(7, 7, 48);
-}
+} 
 
 .main-header {
     background-image: url('https://th.bing.com/th/id/R.5a142e20099ffa294e8a97f845363d4f?rik=JINNuszhRNizfQ&riu=http%3a%2f%2fwallpaperstrend.com%2fwp-content%2fuploads%2fPhotography%2fPhotography02%2fThe-city-lights-in-the-dark-night-3840x2160.jpg&ehk=FvxMQTLPpZqu9l1sXuENQb6mcoUU2zw%2fgp1dmiaZ3mc%3d&risl=&pid=ImgRaw&r=0');
@@ -72,7 +72,9 @@ select {
 .card-content pre {
     font-size: 17px;
     font-family: "Georgia";
+    text-wrap:wrap;
 }
+/*Added text-wrap to card-content pre in order for the text not to go outside of the screen. */
 
 .card img {
     width: 50%;
