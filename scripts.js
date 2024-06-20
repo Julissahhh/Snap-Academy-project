@@ -81,6 +81,8 @@ function editCardContent(card, newFilmlocation, index) {
 
     const cardCommentDisplay = card.querySelector("span");
     cardCommentDisplay.setAttribute("id", `span-${index}`);
+    cardCommentDisplay.classList.add("comment-text");
+
 }
 
 // This calls the addCards() function when the page is first loaded
@@ -97,21 +99,29 @@ function filterLocations() {
         console.log("selected index: ", selectedLocation.selectedIndex)
     });
 
+    //issues fixed: added index to the arguments of the function editCardContents in order to be able to write a comment under a post that is a result of a search
+    
     if (selectedLocation.selectedIndex == 0) {
         for (let i = 0; i < filmlocations.length; i++) {
             const filmlocation = filmlocations[i];
+            const index = selectedLocation.selectedIndex;
             const nextCard = templateCard.cloneNode(true); // Copy the template card
-            editCardContent(nextCard, filmlocation); // Edit title, image, and location, and description
+            editCardContent(nextCard, filmlocation, index); // Edit title, image, and location, and description
             cardContainer.appendChild(nextCard); // Add new card to the container
         }
     }
     else {
         const filmlocation = filmlocations[selectedLocation.selectedIndex-1];
         const nextCard = templateCard.cloneNode(true); // Copy the template card
-        editCardContent(nextCard, filmlocation); // Edit title, image, and location, and description
+        const index = selectedLocation.selectedIndex;
+        console.log(index);
+        console.log(nextCard);
+        editCardContent(nextCard, filmlocation, index); // Edit title, image, and location, and description
         cardContainer.appendChild(nextCard); // Add new card to the container
     }
+    
 }
+
 
 function submitcomment(index){
 
